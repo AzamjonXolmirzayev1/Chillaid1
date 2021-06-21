@@ -1,0 +1,996 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.wrapper{
+    width: 100%;
+    height: 5800px;
+    background-color: white;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.nav ul{
+    display: flex;
+    margin-right: 100px;
+}
+.nav ul li{
+    padding-left: 18px;
+    color :white;
+}
+.nav ul li:hover{
+    cursor: pointer;
+    color: #0084ff;
+}
+.nav h2{
+    padding-left: 100px;
+    color: white;
+}
+.nav h2 span{
+    font-size: 40px;
+    color: rgb(0, 128, 100);
+}
+/* main1  */
+.main1{
+    width: 100%;
+    height: 700px;
+    background-image: url('../ChillAid Example/images/backgrounds/01.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .main1::after{
+    content: '';
+    width: 100%;
+    height: 800px;
+    background-color: rgb(26, 37, 192);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    opacity: 0.2;
+} */
+.main1 h1{
+    font-size: 60px;
+    color: white;
+}
+.main1 p{
+    color: white;
+    padding: 30px 430px 40px;
+    line-height: 30px;
+}
+.main1 button{
+    padding: 15px 20px;
+    color: white;
+    background-color: grey;
+    border: none;
+    border: 1px solid grey;
+}
+
+.main1 button:hover{
+    background: none;
+    /* background-image: url('../images/348x261.png');
+    background-size: cover; */
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+/* /main1 */
+/* main2 */
+.main2{
+    width: 100%;
+    height: 700px;
+    background: white;
+    position: relative;
+   
+}
+.main2 .box1,.box2,.box3,.box4{
+    width: 250px;
+    height: 220px;
+    /* background: green; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main2 .box5,.box6{
+    width: 550px;
+    height: 410px;
+    /* background: green; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icon .fas{
+    font-size: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0px 0px 30px;
+}
+.icon h3{
+    margin: 0px 0px 15px;
+    color: white;
+}
+.icon p{
+    margin: 0px 30px;
+    color: white;
+}
+.icon:hover{
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+.icon:hover h3{
+    color: black;
+}
+.icon:hover p{
+    color: black;
+}
+.icon:hover .fa-hand-rock {
+    background: #97a9bd;
+    color: white;
+}
+.icon:hover .fa-dove {
+    background: #a197bd;
+    color: white;
+}
+.icon:hover .fa-history {
+    background: #bda697;
+    color: white;
+}
+.icon:hover .fa-heartbeat {
+    background: #97bdab;
+    color: white;
+}
+.box1{
+    top:-100px;
+    left: 110px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: #97a9bd;
+}
+.box1 .fas{
+    color: #97a9bd;
+}
+.box2{
+    top:-100px;
+    left: 410px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: #a197bd;
+}
+.box2 .fas{
+    color: #a197bd;
+}
+.box3{
+    top:-100px;
+    left: 710px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: #bda697;
+}
+.box3 .fas{
+    color: #bda697;
+}
+.box4{
+    top:-100px;
+    left: 1010px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: #97bdab;
+}
+.box4 .fas{
+    color: #97bdab;
+}
+
+
+.box5{
+    top:250px;
+    left: 110px;
+    background: green;
+}
+.box6{
+    top:250px;
+    left: 710px;
+    background: green;
+}
+.box .box-image{
+    width: 550px;
+    height: 350px;
+    background-image: url('../ChillAid Example/images/backgrounds/01.png');
+}
+.box .box-icon{
+    width: 550px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid grey;
+}
+.box .box-icon h2{
+    color: #474747;
+    font-size: 19.6px;
+    padding: 0 20px;
+}
+.box .box-icon .fas{
+    color: white;
+    background: #97a9bd;
+    padding: 9px 12px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+.icons:hover .box-icon{
+    transition: all 0.5s ease-in-out;
+    background: #97a9bd;
+}
+.icons:hover .box-icon h2{
+    color: white;
+}
+.icons:hover .box-icon .fas{
+    color: #97a9bd;
+    background: white;
+}
+/* /main2 */
+/* main3 */
+.main3{
+    width: 100%;
+    height: 800px;
+    background-image: url('../ChillAid Example/images/backgrounds/01.png');
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+/* .main3::after{
+    content: '';
+    width: 100%;
+    height: 800px;
+    background-color: rgb(26, 37, 192);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.2;
+} */
+.main3 .paragraph{
+    color: #ffffff;
+    font-size: 23x;
+    margin-top: 70px;
+}
+.main3 .h1{
+    color: #ffffff;
+    font-size: 35.8px;
+}
+.main3 .m3{
+    width: 350px;
+    height: 250px;
+    background: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main3 .m3 p{
+    /* color: black;
+    margin-top: 0; */
+    line-height: 20px;
+    padding: 5px 33px 15px;
+}
+.main3 .m3 .fas{
+    font-size: 20px;
+    padding: 20px;
+    background: #97a9bd;
+    border-radius: 50%;
+    margin: 20px 0px 20px;
+    color: white;
+}
+.main3 .m3:hover{
+    background: #97a9bd;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.main3 .m3:hover .fas{
+    color: #97a9bd;
+    background: white;
+}
+.main3-in1 {
+    top: 210px;
+    left: 100px;
+}
+.main3-in2{
+    top: 210px;
+    left: 500px;
+}
+.main3-in3{
+    top: 210px;
+    left: 900px;
+}
+.main3-in4{
+    top: 500px;
+    left: 100px;
+}
+.main3-in5{
+    top: 500px;
+    left: 500px;
+}
+.main3-in6{
+    top: 500px;
+    left: 900px;
+}
+/* /main3 */
+/* main4 */
+.main4{
+    width: 100%;
+    height: 500px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main4 .paragraph{
+  
+    font-size: 23x;
+    margin-top: 70px;
+}
+.main4 .h1{
+   
+    font-size: 35.8px;
+}
+.main4 .m4{
+    width: 200px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid #97a9bd;
+    /* text-align: center; */
+}
+.main4 .m4 h5{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+    padding: 65px 30px 20px;
+}
+.main4-in1{
+    top: 190px;
+    left: 150px;
+}
+.main4-in2{
+    top: 190px;
+    left: 425px;
+}
+.main4-in3{
+    top: 190px;
+    right: 425px;
+}
+.main4-in4{
+    top: 190px;
+    right: 150px;
+}
+/* /main4 */
+/* main5 */
+.main5{
+    width: 100%;
+    height: 350px;
+    background: #e7e4e4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main5 .paragraph{
+    font-size: 23x;
+    margin-top: 70px;
+}
+.main5 .h1{
+    font-size: 35.8px;
+}
+.main5-2{
+    width: 100%;
+    height: 400px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main5-2 .m5{
+    width: 350px;
+    height: 400px;
+    background: red;
+    position: absolute;
+    margin-top: 50px;
+}
+.main5-in1{
+    top: -200px;
+    left: 100px;
+}
+.main5-in2{
+    top: -200px;
+    left: center;
+}
+.main5-in3{
+    top: -200px;
+    right: 100px;
+}
+.main5-2 .m5 .main5-1{
+    width: 100%;
+    height: 370px;
+    background-image: url('../ChillAid Example/images/546x356.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main5-2 .m5 .main5-1 p{
+    opacity: 0;
+    font-weight:bolder;
+    font-size: 50px;
+    color: white;
+}
+.main5-2 .m5 .main5-1:hover p{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.main5-2 .m5 .main5-1:hover::after{
+    content: '';
+    width: 100%;
+    height: 370px;
+    background-color: rgb(26, 37, 192);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.2;
+}
+.main5-2 .m5 .main5-2{
+    width: 100%;
+    height: 80px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main5-2 .m5 .main5-2 h1{
+    font-size: 25px;
+}
+/* /main5 */
+/* main6 */
+.main6{
+    width: 100%;
+    height: 550px;
+    background: grey;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main6 .paragraph{
+    font-size: 23x;
+    margin-top: 70px;
+    color: white;
+}
+.main6 .h1{
+    font-size: 35.8px;
+    color: white;
+}
+.main6-in1,.main6-in2{
+    width: 550px;
+    height: 300px;
+    /* background: grey; */
+    position: absolute;
+}
+.main6-in1{
+    top: 200px;
+    left: 100px;
+}
+.main6-in2{
+    top: 200px;
+    right: 100px;
+}
+.main6in1{
+    width: 100%;
+    height: 190px;
+    background: grey;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+}
+.doira{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-image: url('../ChillAid Example/images/100x100.png');
+}
+.main6in1 h3{
+    font-size: 25px;
+    color: white;    
+}
+.main6in1 span{
+    font-size: 15px;
+    color: white; 
+}
+.main6in2{
+    width: 100%;
+    height: 110px;
+    background: white;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    text-align: center;
+}
+.main6in2 p{
+    line-height: 20px;
+    padding: 20px 30px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+/* /main6 */
+/* main7 */
+.main7{
+    width: 100%;
+    height: 350px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main7 .paragraph{
+    font-size: 23x;
+    margin-top: 70px;
+}
+.main7 .h1{
+    font-size: 35.8px;
+}
+.main7-1{
+    width: 100%;
+    height: 270px;
+    background-image: url('../ChillAid Example/images/546x356.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underp{
+    width: 100%;
+    height: 30px;
+    background: #282e39;
+    position: absolute;
+    bottom:130px;
+}
+.underp ul{
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+.underp ul .m7li {
+    padding:0px 170px 0px 10px;
+}
+.underp ul li{
+    color: white;
+}
+.underp ul li a{
+    color: white;
+}
+.main7-2{
+    width: 100%;
+    height: 400px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main7-2 .m7{
+    width: 350px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    margin-top: 50px;
+}
+.main7-in1{
+    top: -200px;
+    left: 100px;
+}
+.main7-in2{
+    top: -200px;
+    left: center;
+}
+.main7-in3{
+    top: -200px;
+    right: 100px;
+}
+
+.main7-2 .m7 .main7-1 p{
+    opacity: 0;
+    font-weight:bolder;
+    font-size: 50px;
+    color: white;
+}
+.main7-2 .m7 .main7-1:hover p{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.main7-2 .m7 .main7-1:hover::after{
+    content: '';
+    width: 100%;
+    height: 240px;
+    background-color: rgb(26, 37, 192);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.2;
+}
+.main7-2{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main7-2  .main7-2 h5{
+    font-size: 12px;
+    padding: 0px 170px 0px 10px; 
+    line-height: 15px;
+    opacity: 0.85;
+}
+.main7-2 .m7div{ 
+    width: 1px;
+    height: 80px;
+    background: grey;
+    margin-top: 20px;
+    position: absolute;
+    top: -5px;
+    left: 30px;
+}
+.main7-2  .a1 li {
+    font-size: 18px;
+    padding: 0px 20px 0px 60px; 
+    line-height: 15px;
+}
+.main7-2  .a1 li a{
+    color: black;
+    opacity: 0.7;
+}
+/* /mian7 */
+/* main8 */
+.main8{
+    width: 100%;
+    height: 600px;
+    background: #e7e4e4;
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+}
+.main8 .paragraph{
+    font-size: 23x;
+    margin-top: 70px;
+}
+.main8.h1{
+    font-size: 35.8px;
+}
+.main8in1,.main8in2{
+    width: 550px;
+    height: 350px;
+    background: #e7e4e4;
+    position: absolute;
+}
+.main8in1{
+    top: 200px;
+    left: 100px;
+}
+.main8in1 .m81,.m82,.m83{
+    width: 100%;
+    height: 80px;
+    background: white;
+    margin-bottom: 40px;
+    display: flex;
+}
+.main8in1 .fas{
+    padding: 20px;
+    border-radius: 50%;
+    margin: 10px;
+    color: white;
+}
+.main8in1 .fa-phone{
+    background: #a197bd;
+}
+.main8in1 .fa-envelope{
+    background: #bda697;
+}
+.main8in1 .fa-map{
+    background: #97bdab;
+}
+.main8in1 h3{
+    padding-top: 20px;
+}
+.main8in1 h3 span{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.main8in1 h3 span .opa{
+    opacity: 0.5;
+}
+.m81:hover{
+    background: #a197bd;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.m81:hover .fas{
+    background: white;
+    color: #a197bd;
+}
+.m82:hover{
+    background: #bda697;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.m82:hover .fas{
+    background: white;
+    color: #bda697;
+}
+.m83:hover{
+    background: #97bdab;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.m83:hover .fas{
+    background: white;
+    color: #97bdab;
+}
+
+.main8in2{
+    top: 200px;
+    right: 100px;
+}
+.main8in2 h2{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.main8in2 p{
+    font-size: 19px;
+    padding-bottom: 30px;
+}
+.main8in2 input{
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin-bottom: 30px;
+    border: none;
+}
+.main8in2 button{
+    width: 100px;
+    height: 40px;
+    background:#97a9bd;
+    border: none;
+    color: white;
+}
+.main8in2 button:hover{
+    background: white;
+    border: 0.1px solid black;
+    color: #97a9bd;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+/* /main8 */
+/* main9 (footer) */
+.main9{
+    width: 100%;
+    height: 500px;
+    background-image: url('../ChillAid Example/images/backgrounds/01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.m9{
+    width: 270px;
+    height: 350px;
+    /* background: red; */
+}
+.m9 h2{
+    padding-left: 20px;
+    color: white;
+    padding-bottom: 30px;
+}
+.m9 h2 span{
+    font-size: 40px;
+    color: rgb(0, 128, 100);
+}
+.m9 p{
+    padding-left: 20px;
+    font-size: 18px;
+    color: #a5a6aa;
+}
+.m9 ul{ 
+    display: flex;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.main9in1 ul li{
+    padding: 7px;
+    margin: 7px;
+    /* background: blue; */
+}
+.m9 .fas{
+    color: #e7e4e4;;
+}
+.m9 .fas:hover{
+    color: white;
+}
+.m9 h3{
+    /* padding-left: 20px; */
+    /* font-size: 25px; */
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.main9in2 ul{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.main9in2 ul li {
+    padding: 15px 5px 15px 0px;
+}
+.main9in2 ul li a{
+    font-size: 18px;
+    color: #97a9bd;
+    /* background-color: red; */
+}
+hr{
+    color: #97a9bd;
+}
+.main9in3in1{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    /* background: aqua; */
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+.main9in3{
+    /* background-color: red; */
+    position: relative;
+}
+.main9in3 .m-9{
+    width: 70px;
+    height: 70px;
+    background: green;
+    background-image: url('../ChillAid Example/images/gallery/01.png');
+    background-size: 100px;
+    /* margin-bottom: 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+.main9in3 .m-9 h1{
+    font-size: 39px;
+    opacity: 0;
+}
+.main9in3 .m-9:hover h1{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+/* .m-9::before{
+    content: 'sss';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.2;
+}
+.main9in3 .m-9:hover::after{
+    content: 'sss';
+    width: 100%;
+    height: 370px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.2;
+} */
+
+/* tugamadi */
+
+.main9in4 ul{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.main9in4 ul li {
+    padding: 15px 5px 15px 0px;
+}
+.main9in4 ul li a{
+    font-size: 18px;
+    color: #97a9bd;
+    /* background-color: red; */
+}
+.main9in4 p{
+    padding: 0;
+    padding-bottom: 20px;
+}
+/* /main9 */
+/* mianfooter */
+.mainfooter{
+    width: 100%;
+    height: 60px;
+    background: #a5a6aa; 
+    display: flex;;
+    justify-content: space-between;
+}
+.mainfooter p{
+    padding: 20px 80px;
+}
+.mainfooter span:hover{ 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
